@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const texto = "Bem-vindo ao DC!"; 
-    const delay = 40; 
-    const container = document.getElementById('texto-digitar');
+    let texto = "Bem-vindo ao DC!"; 
+    let delay = 60; 
+    let container = document.getElementById('texto-digitar');
 
     function digitarCaracteres(index) {
         if (index < texto.length) {

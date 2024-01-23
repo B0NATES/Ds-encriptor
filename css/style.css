@@ -1,0 +1,245 @@
+:root {
+    --cor-primaria: #00FFC5;
+    --cor-secundaria:#E8AEB7;
+    --cor-tercearia: #B8E1FF;
+    --cor-quartenaria: #1C0F13;
+    --cor-quintenaria: #210124;
+}
+
+
+*, footer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+body {
+    background: linear-gradient( var(--cor-primaria), var(--cor-secundaria), var(--cor-tercearia));
+}
+
+#texto-digitar {
+    font-family: 'Courier New', monospace;
+    font-size: 58px; 
+    white-space: pre-line;
+    color: var(--cor-quintenaria); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.904); 
+    text-align: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0 0 40px;
+}
+h1:hover {
+    transition: 0.2s;
+    opacity: 50%;
+}
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+textarea {
+    resize: none;
+}
+.input-texto {
+    margin-top: 80px;
+    margin-left: 10px;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 20px;
+    padding: 0.5rem;
+}
+.informacao {
+    margin-left: 15px;
+}
+.mensagens-erro li::before {
+    width: 10px;
+    height: 15px;
+    vertical-align: middle;
+}
+.mensagens-erro li {
+    font-size: 20px;
+    margin-left: 25px;
+}
+.botoes {
+    display: flex;
+    flex-direction: row;
+    margin-top: 57px;
+    margin-left: 15px;
+}
+button {
+    width: 325px;
+    height: 60px;
+    border: 1px solid var(--cor-quintenaria);
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 3px 5px 12px var(--cor-quintenaria);
+}
+button:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    opacity: 80%;
+}
+.btn-codificar {
+    background-color: var(--cor-tercearia);
+    color: white;
+}
+.btn-decodificar {
+    margin-left: 30px;
+    background-color: #c6d2dd;
+    color: var(--cor-quintenaria);
+}
+.container {
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 30px;
+    padding: 2rem;
+    height: 40rem;
+    text-align: center;
+    box-shadow: 12px 18px 35px var(--cor-tercearia);
+}
+.resultado {
+    position: relative;
+    border-color: transparent;
+    border-radius: 30px;
+    padding: 0.5rem;
+}
+.resultado:placeholder-shown {
+    background-image: url(../img/resultado-bg.png);
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.resultado:not(:placeholder-shown) {
+    background-color: white;
+}
+.invisivel {
+    display: none;
+}
+.btn-copiar {
+    background-color: white;
+    color: #680a71;
+}
+footer {
+    text-align: center;
+    margin-top: 9rem;
+    margin-bottom: 3rem;
+}
+.redes {
+    display: inline;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.redes * {
+    vertical-align: middle;
+}
+.redes p {
+    margin-bottom: 15px;
+}
+.redes a {
+    margin: 5px 15px;
+    text-decoration: none;
+    color: white;
+}
+.redes a:hover {
+    transition: 0.5s;
+    opacity: 70%;
+    color: #710a6c;
+}
+.credito {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+    * {
+        font-size: 20px;
+    }
+    #texto-digitar {
+        font-family: 'Courier New', monospace;
+        font-size: 20px; 
+        white-space: pre-line;
+        color: purple; 
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.904); 
+        text-align: center;
+    }
+    header {
+        display: block;
+        margin: 35px 0 0 25px;
+    }
+    .main {
+        display: inline;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .input-texto {
+        margin-top: 5rem;
+        max-width: 80%;
+        height: 20%;
+    }
+    .informacao {
+        margin: 0 auto;
+    }
+    .mensagens-erro li {
+        font-size: 18px;
+        margin: 0 auto;
+    }
+    .botoes {
+        display: inline;
+        margin: 15px auto;
+    }
+    button {
+        height: 50px;
+        font-weight: bold;
+    }
+    button:hover {
+        transition: 0.5;
+        transform: none;
+        opacity: 80%;
+    }
+    .btn-codificar, .btn-decodificar {
+        width: 60%;
+        margin: 15px auto;
+    }
+    .container {
+        margin: 20px auto;
+        width: 75%;
+        height: 30%;
+        padding: 1rem;
+    }
+    .resultado {
+        width: 90%;
+        height: 30%;
+    }
+    .resultado:placeholder-shown {
+        background-image: url(../img/resultado-bg-mw480.png);
+    }
+    .btn-copiar {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .invisivel {
+        display: none;
+    }
+    footer {
+        margin: 2rem auto;
+    }
+    .redes {
+        font-size: 16px;
+    }
+    .redes p {
+        margin-bottom: 10px;
+    }
+    .redes a {
+        margin: 5px;
+    }
+    .credito {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
