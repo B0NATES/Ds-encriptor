@@ -23,15 +23,18 @@ function codifica(texto) {
 
 function decodifica(texto) {
     let codigo = [["a", "ai"], ["e", "enter"], ["i", "imes"], ["o", "ober"], ["u", "ufat"]];
+    
     texto = texto.value;
 
-    for(let i = 0; i < codigo.length; i++) {
-        if(texto.includes(codigo[i][1])) {
-            texto = texto.replaceAll(codigo[i][1], codigo[i][0]);
+    for (const [original, codigoAtual] of codigo) {
+        if (texto.includes(codigoAtual)) {
+            texto = texto.replaceAll(codigoAtual, original);
         }
     }
+    
     return texto;
 }
+
 
 function escreveCodificado() {
     let btnCopiar = document.querySelector(".btn-copiar");
