@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Codificador e decodificador de texto. Foi utilizado HTML, CSS e JavaScript.">
+
+
+    <title>DC</title>
+    <link rel="icon" href="favicon1.ico" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/apresentacao.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <div id="texto-digitar" alt="Bem vindo ao DC"></div>
+
+
+    </header>
+    <main class="main">
+        <section>
+            <textarea class="input-texto" cols="40" rows="9" placeholder="Digite seu texto..."></textarea>
+
+            <div class="informacao">
+                <ul class="mensagens-erro"></ul>
+            </div>
+
+            <div class="botoes">
+                <button type="button" class="btn-codificar" alt="codificar">Codificar</button>
+                <button type="button" class="btn-decodificar" alt="Descodificar">Decodificar</button>
+            </div>
+        </section>
+
+        <section class="container">
+            <textarea class="resultado" alt="nenhuma mensagem encontrada" cols="20" rows="11" placeholder=" "
+                readonly></textarea>
+            <button type="button" class="invisivel btn-copiar" alt="copiar">Copiar</button>
+        </section>
+    </main>
+
+    
+    <div vw class="enabled position-fixed">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+    
+
+    <footer>
+        <div class="redes">
+            <p>Contatos: </p>
+
+            <a href="https://github.com/Tailany24" title="GitHub" target="_blank">
+                <img src="img/logo-github.png" alt="Logo do GitHub.">
+            </a>
+            <a href="https://www.linkedin.com/in/tailany" title="LinkedIn" target="_blank">
+                <img src="img/logo-linkedin.png" alt="Logo do LinkedIn">
+            </a>
+            <a href="https://www.instagram.com/tailany.leite6" title="Instagram" target="_blank">
+                <img src="img/logo-instagram.png" alt="Logo do Instagram">
+            </a>
+        </div>
+
+        <div class="credito">
+            <p alt="desenvolvido por Tailany">&#169; Desenvolvido por Igor Bonates - 2024</p>
+        </div>
+    </footer>
+
+    <script src="js/criptografia.js"></script>
+    <script src="js/valida.js"></script>
+    <script src="js/copiar.js"></script>
+</body>
+
+</html>
