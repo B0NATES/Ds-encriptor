@@ -22,7 +22,7 @@ body {
     font-size: 58px; 
     white-space: pre-line;
     color: var(--cor-quintenaria); 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.904); 
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.904); 
     text-align: center;
 }
 
@@ -45,8 +45,8 @@ textarea {
 .input-texto {
     margin-top: 80px;
     margin-left: 10px;
-    background-color: transparent;
-    border-color: transparent;
+    background-color: rgba(223, 159, 117, 0.11);
+    border-color: var(--cor-secundaria);
     border-radius: 20px;
     padding: 0.5rem;
 }
@@ -87,7 +87,7 @@ button:hover {
 }
 .btn-decodificar {
     margin-left: 30px;
-    background-color: #c6d2dd;
+    background-color: #f3ced3a4 ;
     color: var(--cor-quintenaria);
 }
 .container {
@@ -117,8 +117,8 @@ button:hover {
     display: none;
 }
 .btn-copiar {
-    background-color: white;
-    color: #680a71;
+    background-color: rgba(0, 81, 255, 0.096);
+    color: var(--cor-quintenaria);
 }
 footer {
     text-align: center;
@@ -145,7 +145,7 @@ footer {
 .redes a:hover {
     transition: 0.5s;
     opacity: 70%;
-    color: #710a6c;
+    color: var(--cor-secundaria);
 }
 .credito {
     font-size: 16px;
@@ -162,8 +162,8 @@ footer {
         font-family: 'Courier New', monospace;
         font-size: 20px; 
         white-space: pre-line;
-        color: purple; 
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.904); 
+        color: var(--cor-quintenaria); 
+        text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.904); 
         text-align: center;
     }
     header {
